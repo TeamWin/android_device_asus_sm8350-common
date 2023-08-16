@@ -102,7 +102,3 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(COMMON_PATH)/security/$(BOARD_VENDOR)2 \
     $(COMMON_PATH)/security/$(BOARD_VENDOR)3 \
     $(COMMON_PATH)/security/$(BOARD_VENDOR)4
-
-# Copy modules for depmod
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(COMMON_PATH)/prebuilt,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/1.1)
-
