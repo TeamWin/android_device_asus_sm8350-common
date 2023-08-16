@@ -49,7 +49,7 @@ TARGET_USES_UEFI := true
 # Kernel
 TARGET_NO_KERNEL := false
 TARGET_KERNEL_ARCH := $(TARGET_ARCH)
-BOARD_KERNEL_IMAGE_NAME := Image.gz
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
@@ -151,7 +151,6 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko aw8697.ko focaltech_fts_rog.ko focaltech_fts_rog2.ko focaltech_fts_zf.ko swr_haptics_dlkm.ko texfat.ko tntfs.ko"
 
 # TWRP Debug Flags
 #TWRP_EVENT_LOGGING := true
